@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="lab" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AngularJS 2</title>
+  </head>
+  <body ng-controller="labAdd">
+    <div class="clearList" ng-click="clearList(items)">
+      <div class="container">
+        <h2>To Do<br>List!</h2>
+      </div>
+      <div class="clear">
+        <h2>Clear<br>List!</h2>
+      </div>
+    </div>
+    <button class="add" ng-click="addItem(items)" type="button" name="button">+</button>
+
+
+    <div class="entry">
+      <input class="search" type="search" placeholder="Search for specific to do's" ng-model="search">
+      <input type="text" placeholder="Type your to do's here" ng-model="items.name">
+      <div class="listContainer">
+        <div class="lineBr" ng-repeat="items in list | filter: search">
+          <div class="listDiv" >
+            <div ng-click="removeItem(items)" class="minusDiv">
+              <p class="minus">-</p>
+            </div>
+            <p class="listItem"> {{ items.count + '. ' + items.name }} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" type="text/javascript">  </script>
+    <script src="script.js" type="text/javascript"> </script>
+    <link rel="stylesheet" href="styles.css">
+  </body>
+</html>
+
+
+<!-- <div ng-controller="demoCtrl">
+    <p>{{ message }}</p>
+    <p ng-repeat="item in seasons">{{ item }}</p>
+
+    <input type="text" ng-model="dog.name">
+    <input type="text" ng-model="dog.breed">
+    <button type="button" ng-click="sayHello(dog, breed)" >Say Hello to Dog</button>
+
+    <p ng-repeat="dog in buddies">{{ dog.name }} is a {{ dog.breed }}</p>
+  </div> -->

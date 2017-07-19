@@ -1,0 +1,139 @@
+body {
+  font-size: 100%
+}
+.clearList {
+  z-index: 30
+}
+.clear {
+  box-shadow: 5px 5px 12px rgba(28, 28, 28, 0.8);
+  background-color: red;
+  width: 8%;
+  margin: -6% auto auto 4%;
+  padding: 3%;
+  position: absolute;
+  z-index: 20;
+  border-radius: 50%;
+  visibility: hidden
+}
+.clear h2 {
+  transform: rotate(-22deg);
+}
+.container {
+  box-shadow: 5px 5px 12px rgba(28, 28, 28, 0.8);
+  background-color: navy;
+  width: 8%;
+  margin: -6% auto auto 4%;
+  padding: 3%;
+  position: absolute;
+  z-index: 15;
+  border-radius: 50%;
+}
+.clearList:hover .clear{
+  visibility: visible;
+}
+h2 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 3vw;
+}
+.entry {
+  background: lightyellow;
+  width: 80%;
+  margin: 10% auto 10% auto;
+  min-height: 150px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+input {
+  background-color: lightyellow;
+  border-bottom: 3px solid navy;
+  border-left: 1.5px solid navy;
+  border-top: 0px solid navy;
+  border-right: 0px solid navy;
+  font-size: 1.5vw;
+  width: 30%;
+  margin: 10px 1% 0 1%;
+  padding: 0.5% 0.5% 0.5% 1%;
+}
+input:hover, input:active {
+  background-color: white;
+}
+.add {
+  color: white;
+  margin: -1% 8% 0 0;
+  font-size: 3vw;
+  right: 0;
+  position: absolute;
+  width: 4vw;
+  background-color: navy;
+  padding: 3px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  border-left: 3px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+.add:hover {
+  background-color: green;
+}
+.add:active {
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+  border-right: 2px solid rgba(0, 0, 0, 0.5);
+}
+.search {
+  margin: 0% 22% 0% 12%;
+}
+.listDiv {
+  width: 75%;
+  background-color: navy;
+  border-radius: 5vw;
+  padding: 1%;
+  margin: 1% auto;
+}
+.listDiv:hover, .minusDiv:hover {
+  box-shadow: 5px 5px 1px rgba(0,0,0,0.5)
+}
+.listItem {
+  font-size: 1.8vw;
+  color: white;
+  margin: 0 0 0 4%;
+}
+.minus {
+  color: white;
+  font-size: 3.6vw;
+  text-align: center;
+  margin: -69% auto;
+  width: 100%;
+}
+input:focus {
+  outline: none;
+}
+.minusDiv {
+  display: inline-block;
+  width: 2vw;
+  background-color: red;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.minusDiv:active {
+  box-shadow: 0;
+  background: black;
+}
+p {
+  display: inline-block;
+}
+.lineBr {
+  border-bottom: 1px solid rgba(0,0,0,.5);
+  margin: 0 0 0 -19.3%;
+}
+.lineBr:last-child {
+  border-bottom: 0px solid black;
+}
+div.listContainer {
+  margin: 0 0 8% 16%;
+  padding: 4% 0 8% 0;
+  border-left: 3px solid navy;
+}
