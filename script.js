@@ -1,7 +1,16 @@
 var app = angular.module('lab', []);
 
 app.controller('labAdd', function($scope) {
-  $scope.list = [];
+  $scope.list = [{
+    name: 'Eat pizza',
+    count: 1
+  }, {
+    name: 'Walk the dog',
+    count: 2
+  }, {
+    name: 'File taxes',
+    count: 3
+  }];
   $scope.addItem = function(entry) {
     // console.log(entry);
 
