@@ -101,6 +101,13 @@ input:hover, input:active {
   color: white;
   margin: 0 0 0 4%;
 }
+.listCount {
+  float: right;
+  opacity: .5;
+  color: white;
+  margin: 5px 10px 5px 0;
+  font-size: 1.5vw;
+}
 .minus {
   color: white;
   font-size: 3.6vw;
@@ -117,6 +124,7 @@ input:focus {
   background-color: red;
   border-radius: 50%;
   margin: 0 auto;
+  cursor: pointer;
 }
 .minusDiv:active {
   box-shadow: 0;

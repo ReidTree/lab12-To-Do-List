@@ -2,7 +2,8 @@
 <html ng-app="lab" lang="en">
   <head>
     <meta charset="utf-8">
-    <title>AngularJS 2</title>
+    <title>To Do List</title>
+    <meta name="description" content="To Do List - Angular MVC App">
   </head>
   <body ng-controller="labAdd">
     <div class="clearList" ng-click="clearList(items)">
@@ -17,15 +18,16 @@
 
 
     <div class="entry">
-      <input class="search" type="search" placeholder="Search for specific to do's" ng-model="search">
-      <input type="text" placeholder="Type your to do's here" ng-model="items.name">
+      <input class="search" type="search" placeholder="Filter To-Do" ng-model="search">
+      <input type="text" placeholder="add To-Do" ng-model="items.name">
       <div class="listContainer">
         <div class="lineBr" ng-repeat="items in list | filter: search">
           <div class="listDiv" >
             <div ng-click="removeItem(items)" class="minusDiv">
               <p class="minus">-</p>
             </div>
-            <p class="listItem"> {{ items.count + '. ' + items.name }} </p>
+            <p class="listItem"> {{items.name}} </p>
+            <p class="listCount">{{items.count}}</p>
           </div>
         </div>
       </div>
